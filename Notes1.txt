@@ -1,1 +1,59 @@
 Learning git day 1
+
+1️⃣ Created a new GitHub repo
+
+Repo name: git-learning-lab
+
+Initially empty (or with README.md)
+
+2️⃣ Clone the repo to local machine
+cd Desktop   # go to the folder where you want the repo
+git clone https://github.com/Vishnu-Sureshkumar/git-learning-lab.git
+cd git-learning-lab
+
+This creates the folder git-learning-lab with .git initialized
+
+The local repo is linked to GitHub remote (origin)
+
+3️⃣ Check branch
+git branch
+
+Output: * main → you are on the main branch
+
+4️⃣ Create a new file
+
+Created notes1.txt in VS Code
+
+Added text content for practice
+
+5️⃣ Stage the file
+
+git add .
+
+This tells Git to track the new files
+
+Check staging area:
+
+git status
+
+Should show files ready to commit
+
+6️⃣ Commit the changes
+git commit -m "Added notes and notes1 file"
+
+Saves your changes to local Git repository
+
+-m allows adding the commit message directly
+
+Someone made changes in Readme.md 
+
+7️⃣ Push changes to GitHub
+git push
+
+Now error came. 
+
+So did git pull origin main.
+
+git push origin main. Error.No code in github,
+
+So again did git add ., commit, push
