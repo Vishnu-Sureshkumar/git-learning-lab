@@ -1,0 +1,66 @@
+Currently in main branch
+
+C:\Users\Vishnu.S\Desktop\git-learning-lab>git checkout -b add
+Switched to a new branch 'add'
+
+C:\Users\Vishnu.S\Desktop\git-learning-lab>git add .   
+
+C:\Users\Vishnu.S\Desktop\git-learning-lab>git commit -m "Added add.py file in add branch"
+[add 63b0aa1] Added add.py file in add branch
+ Committer: S <Vishnu.S@motherson.com>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 3 insertions(+)
+ create mode 100644 add.py
+
+C:\Users\Vishnu.S\Desktop\git-learning-lab>git push 
+fatal: The current branch add has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin add
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+
+C:\Users\Vishnu.S\Desktop\git-learning-lab>git push -u origin add
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 345 bytes | 115.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: 
+remote: Create a pull request for 'add' on GitHub by visiting:
+remote:      https://github.com/Vishnu-Sureshkumar/git-learning-lab/pull/new/add
+remote:
+To https://github.com/Vishnu-Sureshkumar/git-learning-lab.git
+ * [new branch]      add -> add
+branch 'add' set up to track 'origin/add'.
+
+C:\Users\Vishnu.S\Desktop\git-learning-lab>git branch
+* add
+  main
+
+C:\Users\Vishnu.S\Desktop\git-learning-lab>git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+C:\Users\Vishnu.S\Desktop\git-learning-lab>git merge add
+Updating cd6a27b..63b0aa1
+Fast-forward
+ add.py | 3 +++
+ 1 file changed, 3 insertions(+)
+ create mode 100644 add.py
+
+C:\Users\Vishnu.S\Desktop\git-learning-lab>
