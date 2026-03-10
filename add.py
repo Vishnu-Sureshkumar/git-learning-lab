@@ -6,3 +6,6 @@ def voice():
 
 def voice3():
   print("something very good")
+
+def voice2():
+  print("Something")
