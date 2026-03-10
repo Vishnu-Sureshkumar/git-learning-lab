@@ -1,5 +1,3 @@
 import time
 
-print("ADD")
-
-print("ADD2")
+print("ADD To subtract")
