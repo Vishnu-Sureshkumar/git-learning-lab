@@ -1,0 +1,40 @@
+When you pushed the correct name
+git push origin Vishnu
+
+Git replied:
+
+Everything up-to-date
+
+That means:
+
+No new commits exist in the Vishnu branch
+
+So nothing needed to be pushed.
+
+Remember: stash changes are not commits, so they cannot be pushed.
+
+If you want the changes to go to GitHub
+
+After applying the stash:
+
+git stash apply
+
+you must commit them first:
+
+git add add.py
+git commit -m "Updated add.py"
+git push origin Vishnu
+
+Only commits can be pushed to GitHub.
+
+Small tip (recommended)
+
+Use lowercase branch names to avoid confusion.
+
+You can rename the branch:
+
+git branch -m Vishnu vishnu
+
+Then push:
+
+git push -u origin vishnu

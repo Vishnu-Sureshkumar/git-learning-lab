@@ -6,3 +6,8 @@ def voice():
 
 def voice2():
   print("Something")
+
+def stash():
+  print("stash")
+
+  
